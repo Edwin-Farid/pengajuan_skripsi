@@ -15,9 +15,9 @@ void main() async {
   final conn = await MySQLConnection.createConnection(
       host: "10.0.2.2",
       port: 3306,
-      userName: 'root',
-      password: 'semogaberkah',
-      databaseName: "db_edwinfarid_ukk_rpl_2024",
+      userName: 'root', // use your own
+      password: '', // use your own
+      databaseName: "db_flutter_mysql", // use your own
       secure: false);
 
   await conn.connect();

@@ -1,16 +1,29 @@
-# ukk_rpl_2024
+# Flutter Apps Pengajuan Skripsi using MySQL Database
 
-A new Flutter project.
+This simple project that can be refrence if you have local project using Flutter
+& MySQL.
 
-## Getting Started
+This apps using 2 dependency :
 
-This project is a starting point for a Flutter application.
+- mysql_client
+- http
 
-A few resources to get you started if this is your first Flutter project:
+# Getting Started
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Think your must know !
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This Apps using MVC design pattern.
+
+## Connection to MySQL
+
+```
+final conn = await MySQLConnection.createConnection(
+      host: "10.0.2.2",
+      port: 3306,
+      userName: 'root',
+      password: '',
+      databaseName: "your_db",
+      secure: false);
+
+  await conn.connect();
+```
